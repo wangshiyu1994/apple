@@ -1,0 +1,631 @@
+/*
+* @Author: Administrator
+* @Date:   2017-03-29 14:05:49
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-03-30 15:35:41
+*/
+*{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+
+}
+
+nav{
+	width: 100%;
+	height: 44px;
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.con{
+	width: 100%;
+	height: 40px;
+	background-color: #444444;
+	margin: 0 auto;
+	line-height: 40px;
+	z-index: 100;
+}
+.con a{
+	display: block;
+	width: 1000px;
+	color: #A8A8AA;
+	font-size: 12px;
+	margin: 0 auto;
+}
+.con span{
+	float: right;
+}
+nav .con1{
+	width: 1000px;
+	height: 44px;
+	margin: 0 auto;
+	text-align: justify;
+	line-height: 44px;
+
+
+
+}
+nav .con1 a{
+	display: inline-block;
+}
+
+nav .con1:after{
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 100%;
+}
+nav a{
+	color: white;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+nav .con1 a:hover{
+	cursor: pointer;
+	color: #959595;
+}
+
+nav .con2{
+	width: 1000px;
+	height: 44px;
+	margin: 0 auto;
+	text-align: justify;
+	line-height: 44px;
+	padding: 0 20px;
+	display: none;
+}
+nav .con2 a{
+	display: inline-block;
+}
+
+nav .con2:after{
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 100%;
+}
+nav .con2 a:hover{
+	cursor: pointer;
+	color: #959595;
+}
+
+/* nav结束 */
+
+/* wheel开始 */
+
+
+
+/* 左右点 */
+.banner{
+	position: relative;
+	width: 100%;
+	height: 540px;
+}
+.banner .img .ri{
+	width: 20%;
+	height: 540px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.banner .img .ri1{
+	width: 20%;
+	height: 540px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 50;
+}
+.banner .img .ri .wheel_,.banner .img .ri1 .wheel_1{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 64px;
+	background: rgba(180, 180, 180, 0.2);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin:auto 10px;
+	font-size: 30px;
+	opacity: 0;
+	transition: all 1s ease;
+	color: #A6A6A6;
+	color: #712931;
+	text-align: center;
+}
+.banner .img .ri1 .wheel_1{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin:auto 0;
+	right: 10px;
+}
+.banner .img .ri:hover .wheel_{
+	opacity: 1;
+	cursor: pointer;
+
+}
+.banner .img .ri1:hover .wheel_1{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.banner .img{
+	width: 100%;
+	height: 540px;
+}
+
+.banner .img a{
+	width: 100%;
+	height: 100%;
+	display: block;
+ 	background-image: url('../img/iphone7_large.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center 200px;	
+	background-color: #CC3341;
+}
+.banner .img .word span{
+	display: block;
+	width: 50px;
+	height: 22px;
+	border: 1px solid white;
+	font-size: 12px;
+	font-weight: lighter;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 24px;
+	color: white;
+	margin-left: 130px;
+	margin: 0 auto;
+
+	
+}
+.banner .word{
+	width: 100%;
+	position: absolute;
+	top: 80px;
+	z-index: 30;
+	/* background: blue; */
+	background-position: center 200px;
+}
+
+.banner .word h3{
+	font-size: 32px;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 20px;
+
+
+}
+.banner .word h2{
+	font-size: 40px;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+/* 线 */
+.banner .img .xian{
+	width: 100%;
+	height: 20px;
+	overflow: hidden;
+	/* background: blue; */
+	position: absolute;
+	top: 480px;
+	z-index: 300;
+	padding: 15px;
+	box-sizing: border-box;
+	position: absolute;
+}
+.banner .img .xian>a{
+	display: block;
+	width: 50px;
+	height: 2px;
+	background: red;
+	float: left;
+	background: #A4333C;
+	margin-right: 5px;
+	position: relative;
+	left: 42%;
+}
+.banner .img .xian>a:hover{
+	background: #808080;
+}
+
+
+/* wheel结束 */
+
+
+
+
+
+
+
+/* 四张图开始 */
+.tu{
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.tu>a{
+	display: block;
+	width: 25%;
+	height: 200px;
+	float: left;	
+	background-position: center;
+}
+.tu .tu1{
+	background-image: url(../img/i_large.jpg);
+}
+.tu .tu2{
+	background-image: url(../img/s_large.jpg);
+}
+.tu .tu3{
+	background-image: url(../img/a_large.jpg);
+}
+.tu .tu4{
+	background-image: url(../img/w_large.jpg);
+}
+
+
+
+
+
+footer{
+	width: 100%; 
+	height: auto;
+	background: #F2F2F2;
+}
+footer ._con{
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	/* background: blue; */
+	overflow: hidden;
+}
+footer ._con ._con1{
+	width: 100%;
+	height: 50px;
+	background: #F2F2F2;
+	border-bottom: 1px solid #D6D6D6;
+	padding: 15px 10px;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+footer ._con ._con2{
+	widows: 100%;
+	height: auto;
+	overflow: hidden;	
+	margin-top: 30px;
+}
+footer ._con ._con2>li .lu{
+	width: 20%;
+	height: auto;
+	float: left;
+	font-size: 14px;
+}
+footer ._con ._con2>li .lu a{
+	color: #828282;
+}
+footer ._con ._con2>li .lu a:hover{
+	text-decoration: underline;
+}
+footer ._con ._con3{
+	width: 100%;
+	height: 30px;
+	margin-top: 50px;
+	font-size: 12px;
+	border-bottom: 1px solid #D6D6D6;
+}
+footer ._con ._con3 a{
+	color: #0070C9;
+}
+footer ._con ._con3 a:hover{
+	text-decoration: underline;
+}
+footer ._con ._con4>a{
+	display: block;
+	float: left;
+	width: 60px;
+	color: #555555;
+	font-size: 12px;
+	border-right: 1px solid #D6D6D6;
+	margin-right: 6px;
+}
+footer ._con ._con4{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 15px;
+}
+footer ._con ._con4 a:hover{
+	text-decoration: underline;
+}
+footer ._con ._con4 .rig{
+	float: left;
+	font-size: 12px;
+}
+footer ._con p{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 12px;
+}
+footer ._con p a{
+	color:#555555 ;
+}
+footer ._con p a:hover{
+	text-decoration: underline;
+}
+
+
+footer .con1{
+	width: 770px;
+	height: auto;
+	overflow: hidden;
+	/* background: blue; */
+
+}
+footer .con1 ._con1{
+	width: 100%;
+	height: 50px;
+	background: #F2F2F2;
+	border-bottom: 1px solid #D6D6D6;
+	padding: 15px 10px;
+	font-size: 12px;
+	box-sizing: border-box;
+	color: #ABABAB;
+}
+footer .con1 .shang{
+	width: 100%;
+	height: auto;
+	font-size: 14px;
+
+}
+footer .con1 .shang .jia{
+	display: block;
+	float: right;
+}
+footer .con1 .shang>a{
+	display:block;
+	width: 100%;
+	height: 48px;
+	line-height: 40px;
+	color: #828282;
+	font-size: 14px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	text-align: justify;
+	border-bottom: 1px solid #D6D6D6;
+}
+footer .con1 .shang .jia{
+	display: block;
+	float: right;
+	color: #4A4A4A;
+	font-size:20px;
+}
+
+footer .con1 ._con3{
+	width: 100%;
+	height: 20px;
+	padding: 20px 20px;
+	font-size: 12px;
+	color: #888888;
+}
+
+footer .con1 ._con3 a{
+	color: #0070C9;
+}
+footer .con1 ._con3 a:hover{
+	text-decoration: underline;
+}
+
+
+footer .con1 ._con4{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 20px 20px;
+}
+footer .con1 ._con4 .rig{
+	float: left;
+	color: #888888;
+}
+footer .con1 .p1{
+	width: 100%;
+	height: auto;
+	padding: 20px 20px;
+	color: #9C9C9C;
+	font-size: 12px;
+}
+footer .con1 .p1 a{
+	color:  #9C9C9C;
+}
+footer .con1 .p1 a:hover{
+	text-decoration: underline;
+}
+footer .con1 ._con5{
+	padding: 20px 20px;
+}
+footer .con1 ._con5>a{
+	float: left;
+	width: 60px;
+	color: #555555;
+	font-size: 12px;
+	border-right: 1px solid #D6D6D6;
+}
+footer .con1 ._con5>a:hover{
+	text-decoration: underline;
+}
+
+
+footer .con1{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 1000px){
+		nav .con1{
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	.con a{
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	.banner .img a{
+	width: 100%;
+	height: 100%;
+	display: block;
+ 	background-image: url('../img/iphone7_medium.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center 200px;	
+	}
+	.banner{
+		height: 500px;
+	}
+	.banner .img{
+		height: 500px;
+	}
+	.tu{
+		width: 100%;
+	}
+	.tu>a{
+	display: block;
+	width: 50%;
+	height: 200px;
+	float: left;	
+	}
+	.tu .tu1{
+	background-image: url(../img/i_medium.jpg);
+	
+	background-size: 640px 200px;
+	}
+	.tu .tu2{
+	background-image: url(../img/s_medium.jpg);
+	
+	background-size: 640px 200px;
+	}
+	.tu .tu3{
+	background-image: url(../img/a_medium.jpg);
+	
+	background-size: 640px 200px;
+	}
+	.tu .tu4{
+	background-image: url(../img/w_medium.jpg);
+
+	background-size: 640px 200px;
+	}
+	footer ._con{
+		width: 100%;
+	}
+	footer ._con{
+		margin: 0 20px;
+	}
+	.banner .img .xian{
+	
+	top: 440px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 770px){
+	nav .con1{
+		display: none;
+	}
+
+	nav .con2{
+		width: 100%;
+		display: block;
+		box-sizing: border-box;
+	}
+	.banner .img a{
+	width: 100%;
+	height: 100%;
+	display: block;
+ 	background-image: url('../img/iphone7_small.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center 200px;	
+	}
+	.banner{
+		height: 460px;
+	}
+	.banner .img{
+		height: 460px;
+	}
+	.tu{
+		width: 100%;
+	}
+	.tu>a{
+	display: block;
+	width: 50%;
+	height: 200px;
+	float: left;	
+	}
+	.tu .tu1{
+	background-image: url(../img/i_small.jpg);
+	width: 100%;
+	height: 200px;
+	}
+	.tu .tu2{
+	background-image: url(../img/s_small.jpg);
+	width: 100%;
+	height: 200px;
+	}
+	.tu .tu3{
+	background-image: url(../img/a_small.jpg);
+	width: 100%;
+	height: 200px;
+	}
+	.tu .tu4{
+	background-image: url(../img/w_small.jpg);
+	width: 100%;
+	height: 200px;
+	}
+	footer ._con{
+		display: none;
+	}
+	footer .con1{
+		display: block;
+		width: 100%;
+		margin-top: 20px 0;
+	}
+	footer .con1 ._con1{
+		height: 65px;
+
+	}
+	.banner .img .xian{
+	top: 410px;
+	}
+	.banner .img .xian>a{
+		left: 30%;
+	}
+
+}
+
+
+
+
+
